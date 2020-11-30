@@ -186,9 +186,9 @@ function MultiDrawTarot(CardToCal, text, type) {
 			returnStr += text + ': \n';
 
 		for (i = 0; i < 3; i++) {
-			if (i == 0) returnStr += '過去: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
-			if (i == 1) returnStr += '現在: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
-			if (i == 2) returnStr += '未來: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]);
+			if (i == 0) returnStr += 'mgephaiagl: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+			if (i == 1) returnStr += 'hai: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+			if (i == 2) returnStr += 'ephaiagl: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]);
 		}
 
 	} else if (type == 2) //塞爾特大十字
@@ -212,26 +212,26 @@ function MultiDrawTarot(CardToCal, text, type) {
 			returnStr += text + ': \n';
 
 		for (i = 0; i < 10; i++) {
-			if (i == 0) returnStr += '現況: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+			if (i == 0) returnStr += 'hai: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
 			if (i == 1) {
 				if (revs[i] == 0) //正位
-					returnStr += '助力: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+					returnStr += 'ahh‵mglagln: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
 				else
-					returnStr += '阻力: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+					returnStr += 'mgepahnnn: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
 			}
-			if (i == 2) returnStr += '目標: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
-			if (i == 3) returnStr += '基礎: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
-			if (i == 4) returnStr += '過去: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
-			if (i == 5) returnStr += '未來: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
-			if (i == 6) returnStr += '自我: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
-			if (i == 7) returnStr += '環境: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+			if (i == 2) returnStr += 'mgr‵luh: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+			if (i == 3) returnStr += 'eplw‵shuggor: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+			if (i == 4) returnStr += 'mgephaiagl: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+			if (i == 5) returnStr += 'ephaiagl: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+			if (i == 6) returnStr += 'y‵ah: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+			if (i == 7) returnStr += 'wgah‵nagl: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
 			if (i == 8) {
 				if (revs[i] == 0) //正位
-					returnStr += '希望: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+					returnStr += 'gotha: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
 				else
-					returnStr += '恐懼: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
+					returnStr += 'lloigshogg: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]) + '\n';
 			}
-			if (i == 9) returnStr += '結論: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]);
+			if (i == 9) returnStr += 'zhro: ' + tarotCardReply(cards[i]) + ' ' + tarotRevReply(revs[i]);
 
 		}
 
@@ -273,86 +273,86 @@ function tarotRevReply(count) {
 
 function tarotCardReply(count) {
 	let returnStr = '';
-	// returnStr = count + '愚者';
-	if (count == 0) returnStr = '愚者';
-	if (count == 1) returnStr = '魔術師';
-	if (count == 2) returnStr = '女祭司';
-	if (count == 3) returnStr = '女皇';
-	if (count == 4) returnStr = '皇帝';
-	if (count == 5) returnStr = '教皇';
-	if (count == 6) returnStr = '戀人';
-	if (count == 7) returnStr = '戰車';
-	if (count == 8) returnStr = '力量';
-	if (count == 9) returnStr = '隱者';
-	if (count == 10) returnStr = '命運之輪';
-	if (count == 11) returnStr = '正義';
-	if (count == 12) returnStr = '吊人';
-	if (count == 13) returnStr = '死神';
-	if (count == 14) returnStr = '節制';
-	if (count == 15) returnStr = '惡魔';
-	if (count == 16) returnStr = '高塔';
-	if (count == 17) returnStr = '星星';
-	if (count == 18) returnStr = '月亮';
-	if (count == 19) returnStr = '太陽';
-	if (count == 20) returnStr = '審判';
-	if (count == 21) returnStr = '世界';
-	if (count == 22) returnStr = '權杖一';
-	if (count == 23) returnStr = '權杖二';
-	if (count == 24) returnStr = '權杖三';
-	if (count == 25) returnStr = '權杖四';
-	if (count == 26) returnStr = '權杖五';
-	if (count == 27) returnStr = '權杖六';
-	if (count == 28) returnStr = '權杖七';
-	if (count == 29) returnStr = '權杖八';
-	if (count == 30) returnStr = '權杖九';
-	if (count == 31) returnStr = '權杖十';
-	if (count == 32) returnStr = '權杖侍者';
-	if (count == 33) returnStr = '權杖騎士';
-	if (count == 34) returnStr = '權杖皇后';
-	if (count == 35) returnStr = '權杖國王';
-	if (count == 36) returnStr = '聖杯一';
-	if (count == 37) returnStr = '聖杯二';
-	if (count == 38) returnStr = '聖杯三';
-	if (count == 39) returnStr = '聖杯四';
-	if (count == 40) returnStr = '聖杯五';
-	if (count == 41) returnStr = '聖杯六';
-	if (count == 42) returnStr = '聖杯七';
-	if (count == 43) returnStr = '聖杯八';
-	if (count == 44) returnStr = '聖杯九';
-	if (count == 45) returnStr = '聖杯十';
-	if (count == 46) returnStr = '聖杯侍者';
-	if (count == 47) returnStr = '聖杯騎士';
-	if (count == 48) returnStr = '聖杯皇后';
-	if (count == 49) returnStr = '聖杯國王';
-	if (count == 50) returnStr = '寶劍一';
-	if (count == 51) returnStr = '寶劍二';
-	if (count == 52) returnStr = '寶劍三';
-	if (count == 53) returnStr = '寶劍四';
-	if (count == 54) returnStr = '寶劍五';
-	if (count == 55) returnStr = '寶劍六';
-	if (count == 56) returnStr = '寶劍七';
-	if (count == 57) returnStr = '寶劍八';
-	if (count == 58) returnStr = '寶劍九';
-	if (count == 59) returnStr = '寶劍十';
-	if (count == 60) returnStr = '寶劍侍者';
-	if (count == 61) returnStr = '寶劍騎士';
-	if (count == 62) returnStr = '寶劍皇后';
-	if (count == 63) returnStr = '寶劍國王';
-	if (count == 64) returnStr = '錢幣一';
-	if (count == 65) returnStr = '錢幣二';
-	if (count == 66) returnStr = '錢幣三';
-	if (count == 67) returnStr = '錢幣四';
-	if (count == 68) returnStr = '錢幣五';
-	if (count == 69) returnStr = '錢幣六';
-	if (count == 70) returnStr = '錢幣七';
-	if (count == 71) returnStr = '錢幣八';
-	if (count == 72) returnStr = '錢幣九';
-	if (count == 73) returnStr = '錢幣十';
-	if (count == 74) returnStr = '錢幣侍者';
-	if (count == 75) returnStr = '錢幣騎士';
-	if (count == 76) returnStr = '錢幣皇后';
-	if (count == 77) returnStr = '錢幣國王';
-	if (count == 78) returnStr = '空白牌';
+	// returnStr = count + 'Amprodias';
+	if (count == 0) returnStr = 'Amprodias';
+	if (count == 1) returnStr = 'Baratchial';
+	if (count == 2) returnStr = 'Gargophias';
+	if (count == 3) returnStr = 'Dagdagiel';
+	if (count == 4) returnStr = 'Hemethterith';
+	if (count == 5) returnStr = 'Uriens';
+	if (count == 6) returnStr = 'Zamradiel';
+	if (count == 7) returnStr = 'Characith';
+	if (count == 8) returnStr = 'Temphioth';
+	if (count == 9) returnStr = 'Yamatu';
+	if (count == 10) returnStr = 'Kurgasiax';
+	if (count == 11) returnStr = 'Lafcursiax';
+	if (count == 12) returnStr = 'Malkunofat';
+	if (count == 13) returnStr = 'Niantiel';
+	if (count == 14) returnStr = 'Saksaksalim';
+	if (count == 15) returnStr = 'A‵ano‵nin';
+	if (count == 16) returnStr = 'Parfaxitas';
+	if (count == 17) returnStr = 'Tzuflifu';
+	if (count == 18) returnStr = 'Qulielfi';
+	if (count == 19) returnStr = 'Raflifu';
+	if (count == 20) returnStr = 'Shalicu';
+	if (count == 21) returnStr = 'Thantifaxath';
+	if (count == 22) returnStr = 'Mi-Habekiyeh-Bacikal';
+	if (count == 23) returnStr = 'Mi-Habekiyeh-Iweleth';
+	if (count == 24) returnStr = 'Mi-Habekiyeh-Sheriruth';
+	if (count == 25) returnStr = 'Mi-Habekiyeh-Adyeshach';
+	if (count == 26) returnStr = 'Mi-Habekiyeh-Akzeriyyuth';
+	if (count == 27) returnStr = 'Mi-Habekiyeh-Kaitul';
+	if (count == 28) returnStr = 'Mi-Habekiyeh-Shakah';
+	if (count == 29) returnStr = 'Mi-Habekiyeh-Chemdah';
+	if (count == 30) returnStr = 'Mi-Habekiyeh-Aiyatsbus';
+	if (count == 31) returnStr = 'Mi-Habekiyeh-Qimranut';
+	if (count == 32) returnStr = 'Mi-Habekiyeh-Nephesh';
+	if (count == 33) returnStr = 'Mi-Habekiyeh-Ruach';
+	if (count == 34) returnStr = 'Mi-Habekiyeh-Neschamah';
+	if (count == 35) returnStr = 'Mi-Habekiyeh-Chiah';
+	if (count == 36) returnStr = 'Mi-Ha‵ash-Bacikal';
+	if (count == 37) returnStr = 'Mi-Ha‵ash-Iweleth';
+	if (count == 38) returnStr = 'Mi-Ha‵ash-Sheriruth';
+	if (count == 39) returnStr = 'Mi-Ha‵ash-Adyeshach';
+	if (count == 40) returnStr = 'Mi-Ha‵ash-Akzeriyyuth';
+	if (count == 41) returnStr = 'Mi-Ha‵ash-Kaitul';
+	if (count == 42) returnStr = 'Mi-Ha‵ash-Shakah';
+	if (count == 43) returnStr = 'Mi-Ha‵ash-Chemdah';
+	if (count == 44) returnStr = 'Mi-Ha‵ash-Aiyatsbus';
+	if (count == 45) returnStr = 'Mi-Ha‵ash-Qimranut';
+	if (count == 46) returnStr = 'Mi-Ha‵ash-Nephesh';
+	if (count == 47) returnStr = 'Mi-Ha‵ash-Ruach';
+	if (count == 48) returnStr = 'Mi-Ha‵ash-Neschamah';
+	if (count == 49) returnStr = 'Mi-Ha‵ash-Chiah';
+	if (count == 50) returnStr = 'Mi-Auquinos-Bacikal';
+	if (count == 51) returnStr = 'Mi-Auquinos-Iweleth';
+	if (count == 52) returnStr = 'Mi-Auquinos-Sheriruth';
+	if (count == 53) returnStr = 'Mi-Auquinos-Adyeshach';
+	if (count == 54) returnStr = 'Mi-Auquinos-Akzeriyyuth';
+	if (count == 55) returnStr = 'Mi-Auquinos-Kaitul';
+	if (count == 56) returnStr = 'Mi-Auquinos-Shakah';
+	if (count == 57) returnStr = 'Mi-Auquinos-Chemdah';
+	if (count == 58) returnStr = 'Mi-Auquinos-Aiyatsbus';
+	if (count == 59) returnStr = 'Mi-Auquinos-Qimranut';
+	if (count == 60) returnStr = 'Mi-Auquinos-Nephesh';
+	if (count == 61) returnStr = 'Mi-Auquinos-Ruach';
+	if (count == 62) returnStr = 'Mi-Auquinos-Neschamah';
+	if (count == 63) returnStr = 'Mi-Auquinos-Chiah';
+	if (count == 64) returnStr = 'Marmeh-Im-Bacikal';
+	if (count == 65) returnStr = 'Marmeh-Im-Iweleth';
+	if (count == 66) returnStr = 'Marmeh-Im-Sheriruth';
+	if (count == 67) returnStr = 'Marmeh-Im-Adyeshach';
+	if (count == 68) returnStr = 'Marmeh-Im-Akzeriyyuth';
+	if (count == 69) returnStr = 'Marmeh-Im-Kaitul';
+	if (count == 70) returnStr = 'Marmeh-Im-Shakah';
+	if (count == 71) returnStr = 'Marmeh-Im-Chemdah';
+	if (count == 72) returnStr = 'Marmeh-Im-Aiyatsbus';
+	if (count == 73) returnStr = 'Marmeh-Im-Qimranut';
+	if (count == 74) returnStr = 'Marmeh-Im-Nephesh';
+	if (count == 75) returnStr = 'Marmeh-Im-Ruach';
+	if (count == 76) returnStr = 'Marmeh-Im-Neschamah';
+	if (count == 77) returnStr = 'Marmeh-Im-Chiah';
+	if (count == 78) returnStr = 'Chasek';
 	return returnStr;
 	//return rply;
 
